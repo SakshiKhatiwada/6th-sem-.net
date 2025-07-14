@@ -66,7 +66,7 @@ namespace Project1
             nlines = Convert.ToInt32(Console.ReadLine());
 
             for (int i=1; i<=nlines; i++){
-                for(int j = i; j<=nlines/2; j++){
+                for(int j = i; j<=(nlines); j++){
                     Console.Write(" ");
                 }
                 for (int k = 1; k<=2*i-1; k=k+1){
@@ -74,6 +74,9 @@ namespace Project1
                 }
                 Console.Write("\n");
             }
+
+            //SECTION - Day 4
+            
 
         }
     }
