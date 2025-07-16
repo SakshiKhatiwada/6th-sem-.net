@@ -61,22 +61,54 @@ namespace Project1
             // Console.WriteLine("The given number "+ num1 + " is odd.");
 
             // -------------------------------- To print * pattern
-            int nlines;
-            Console.WriteLine("Enter the number of lines you want to print: ");
-            nlines = Convert.ToInt32(Console.ReadLine());
+            // int nlines;
+            // Console.WriteLine("Enter the number of lines you want to print: ");
+            // nlines = Convert.ToInt32(Console.ReadLine());
 
-            for (int i=1; i<=nlines; i++){
-                for(int j = i; j<=(nlines); j++){
-                    Console.Write(" ");
-                }
-                for (int k = 1; k<=2*i-1; k=k+1){
-                Console.Write("*");
-                }
-                Console.Write("\n");
-            }
+            // for (int i=1; i<=nlines; i++){
+            //     for(int j = i; j<=(nlines); j++){
+            //         Console.Write(" ");
+            //     }
+            //     for (int k = 1; k<=2*i-1; k=k+1){
+            //     Console.Write("*");
+            //     }
+            //     Console.Write("\n");
+            // }
 
             //SECTION - Day 4
-            
+            // To print odd or even numbers based on user's input
+            string choice;
+            int upto;
+            Console.WriteLine("Enter whether you want to print odd numbers or even numbers ?");
+            choice = Console.ReadLine();
+            if (!String.Equals(choice.ToLower(), "odd") && !String.Equals(choice.ToLower(),"even")){
+                Console.WriteLine("Please Choose either 'odd' or 'even': ");
+                choice = Console.ReadLine();
+            }
+            Console.WriteLine("Upto what number ?");
+            upto = Convert.ToInt32(Console.ReadLine());
+
+            void printing(int start, int end) {
+                for (int i = start; i<end; i = i+2)
+                {
+                    Console.Write(i+" ");
+                }
+            }
+
+            Console.WriteLine(choice + " numbers upto "+ upto + " are: ");
+
+            if (String.Equals(choice.ToLower(), "odd"))
+            {
+                printing(1,upto);
+            }
+
+            else if (String.Equals(choice.ToLower(), "even"))
+            {
+                printing(0,upto);
+            }
+            else {
+                Console.WriteLine("You still gave wrong input. Please try again later!");
+            }
 
         }
     }
