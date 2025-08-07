@@ -22,7 +22,22 @@ namespace ClassConcept
     //     {
     //         Console.WriteLine("The car is going really fast with speed: " + maxSpeed);
     //     }
+    // SECTION to make the code clean we write Main() on other class
+    // class Car
+    // {
+    //     public string color = "red"; //public keyword is used
+    //     int maxSpeed = 200;
+    //     public int yearPurchased;
+    //     public void FullThrottle()
+    //     {
+    //         Console.WriteLine("The car is going really fast with speed: " + maxSpeed);
+    //     }
 
+    //     public void PrintYear()
+    //     {
+    //         Console.WriteLine("The year purchased is: " + this.yearPurchased);
+    //     }
+    //     }
     //     public void PrintYear()
     //     {
     //         Console.WriteLine("The year purchased is: " + this.yearPurchased);
@@ -38,7 +53,11 @@ namespace ClassConcept
 
     //         Car myCar = new Car();
     //         Car myCar2 = new Car();
+    //         Car myCar = new Car();
+    //         Car myCar2 = new Car();
 
+    //         myCar.yearPurchased = 2014;
+    //         myCar2.yearPurchased = 2016;
     //         myCar.yearPurchased = 2014;
     //         myCar2.yearPurchased = 2016;
 
